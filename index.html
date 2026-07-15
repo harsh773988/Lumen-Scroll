@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumen Scroll | A Parallax Journey</title>
+    <meta
+      name="description"
+      content="An immersive parallax story experience that unfolds across layered landscapes and luminous scenes."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="progress-bar" aria-hidden="true"></div>
+
+    <header class="site-nav">
+      <a class="brand" href="#home">LUMEN<span>SCROLL</span></a>
+      <nav class="nav-links">
+        <a href="#journey">Journey</a>
+        <a href="#ocean">Ocean</a>
+        <a href="#city">Signal</a>
+        <a href="#launch">Launch</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section hero" id="home">
+        <div class="parallax-layer sky-layer" data-speed="0.12"></div>
+        <div class="parallax-layer sun-layer" data-speed="0.18"></div>
+        <div class="parallax-layer cloud-layer" data-speed="0.3"></div>
+        <div class="parallax-layer mountain-layer" data-speed="0.5"></div>
+        <div class="parallax-layer meadow-layer" data-speed="0.74"></div>
+
+        <div class="hero-content fade-up">
+          <div class="hero-pill">Immersive • cinematic • responsive</div>
+          <p class="eyebrow">A story told in motion</p>
+          <h1>Follow the glow across a dreamscape.</h1>
+          <p>
+            Drift through a luminous landscape where the horizon opens into new colors with every scroll.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#journey">Begin the journey</a>
+            <a class="btn secondary" href="#city">See the motion</a>
+          </div>
+        </div>
+
+        <div class="hero-ambient" aria-hidden="true"></div>
+
+        <div class="scroll-indicator" aria-hidden="true">
+          <span></span>
+        </div>
+      </section>
+
+      <section class="section story-section" id="journey">
+        <div class="parallax-layer ridge-layer" data-speed="0.2"></div>
+        <div class="parallax-layer forest-layer" data-speed="0.45"></div>
+        <div class="parallax-layer glow-layer" data-speed="0.68"></div>
+
+        <div class="story-card fade-up">
+          <p class="eyebrow">Chapter 01</p>
+          <h2>The horizon wakes.</h2>
+          <p>
+            Dawn spills over the ridges as the air brightens and the world lifts into a softer, warmer rhythm.
+          </p>
+        </div>
+      </section>
+
+      <section class="section story-section ocean-section" id="ocean">
+        <div class="parallax-layer ocean-sky" data-speed="0.16"></div>
+        <div class="parallax-layer wave-layer" data-speed="0.38"></div>
+        <div class="parallax-layer orb-layer" data-speed="0.7"></div>
+
+        <div class="story-card fade-up">
+          <p class="eyebrow">Chapter 02</p>
+          <h2>Light gathers into motion.</h2>
+          <p>
+            A floating signal drifts opposite the tide, turning the shoreline into a place of quiet wonder.
+          </p>
+        </div>
+      </section>
+
+      <section class="section story-section city-section" id="city">
+        <div class="parallax-layer city-sky" data-speed="0.14"></div>
+        <div class="parallax-layer city-buildings" data-speed="0.36"></div>
+        <div class="parallax-layer city-bokeh" data-speed="0.6"></div>
+
+        <div class="content-stack fade-up">
+          <div class="section-heading">
+            <p class="eyebrow">Chapter 03</p>
+            <h2>Signals rise above the city.</h2>
+            <p>
+              The scene shifts from open landscape to a skyline of bright ideas, where each block hums with possibility.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card fade-up">
+              <h3>Velvet Motion</h3>
+              <p>Layered depth creates a calm, cinematic rhythm as you move through the page.</p>
+            </article>
+            <article class="feature-card fade-up">
+              <h3>Bright Detail</h3>
+              <p>Soft gradients and light-filled shapes keep each beat feeling fresh and airy.</p>
+            </article>
+            <article class="feature-card fade-up">
+              <h3>Playful Flow</h3>
+              <p>The story changes pace without ever losing its sense of movement or focus.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section story-section final-section" id="launch">
+        <div class="parallax-layer stars-layer" data-speed="0.1"></div>
+        <div class="parallax-layer nebula-layer" data-speed="0.24"></div>
+
+        <div class="final-card fade-up">
+          <p class="eyebrow">Chapter 04</p>
+          <h2>The night opens wide.</h2>
+          <p>
+            Every layer has now found its place, turning the experience into a gentle orbit of color, motion, and wonder.
+          </p>
+          <a class="btn primary" href="#home">Restart the dream</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Lumen Scroll • Crafted for dreamy motion.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
